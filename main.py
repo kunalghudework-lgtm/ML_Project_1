@@ -1,5 +1,6 @@
-inp = input("Enter your name: ")
+import pandas as pd
 
-print(f"Hello {inp}!! \nWelcome to the program!!!")
-print("This is a simple program to greet the user.")
-print("You can modify this program to add more features.")
+
+df = pd.read_excel("loan_interest_rate_dataset.xlsx")
+
+print(df.head())
